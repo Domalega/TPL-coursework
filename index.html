@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TPL coursework</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <header>
+    <h2 class="name_lab"> Курсовая работа по ТЯП</h2>
+  </header>
+  <main class="main">
+    <nav class="navParent">
+      
+      <div>
+        <button class="btn infoAuthor">Об авторе</button>
+        <div class="infoAuthor_text">Домалега Владимир ИП-915</div> 
+      </div>
+      
+      <div>
+        <button class="btn infoTheme">Тема</button>
+        <div class="infoTheme_text"><p>Написать программу, которая по предложенному описанию языка построит
+          регулярную грамматику,
+          задающую этот язык, и позволит сгенерировать с её помощью все цепочки языка в заданном диапазоне
+          длин. Предусмотреть возможность
+          поэтапного отображения на экране процесса генерации цепочек.</p></div>
+      </div>  
+
+      <div>
+        <button class="btn infoVariant">Вариант</button>
+        <div class="infoVariant_text"><p>Алфавит, начальная и конечная подцепочки и кратность длины всех цепочек языка.</p></div> 
+      </div>
+    </nav>
+    
+    <div class="parametrParent">
+      <textarea placeholder="Введите алфавит(a, b, c)" class = "main_parametr alphabet"></textarea>    
+      <textarea placeholder="Начальная подцепочка(aa)" class = "main_parametr startChain"></textarea>
+      <textarea placeholder="Конечная подцепочка(bb)" class = "main_parametr endChain"></textarea> 
+      <textarea placeholder="Кратность языка(4)" class = "main_parametr multiplicity"></textarea>
+      <button class="btn main_bot" onclick="Func()">Cтарт</button>
+      <button class="btn main_bot RED" onclick="Example()">Пример!!!</button>
+    </div>
+    <textarea class="main_parametr main_output_textarea"></textarea>
+    <div class="main_output">Ответ: </div>
+    
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

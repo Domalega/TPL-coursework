@@ -1,0 +1,154 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  background: #D1D1E5;
+  font-family: Georgia, serif;
+}
+
+.name_lab{
+  text-align: center;
+}
+
+.navParent{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;  
+}
+
+.infoAuthor_text {
+  display: none;
+  padding: 10px;
+}
+
+.infoTheme_text {
+  display: none;
+  padding: 10px;
+}
+
+.infoVariant_text {
+  display: none;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.btn{
+  padding: 10px;
+  border: 0;
+  border-radius: 15px;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  box-shadow: 8px 8px 8px gray;
+}
+
+.btn:hover{
+  background-color: #e3e3e3;
+}
+
+.btn:active {
+  box-shadow: 15px 15px 15px gray;
+  transform: translateY(4px);
+}
+
+nav{
+  margin-bottom: 50px;  
+}
+
+.main_input{
+  font-family: Georgia, serif;
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 8px 8px 8px gray;
+  font-size: 20px;
+  min-width: 80%;
+  display: block;
+  margin: 10px auto;
+  resize: none;
+  min-height: 100px;
+}
+
+.btnCont{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;   
+}
+
+.main_bot{
+  margin-top: 10px;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  padding: 20px;
+  display: block;
+  margin: 10px auto;  
+}
+
+.parametrParent{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;   
+}
+
+.main_parametr{
+  font-family: Georgia, serif;
+  font-size: 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 8px 8px 8px gray;
+  resize: none;
+  min-width: 90%;
+  margin: 0 auto;  
+}
+
+.main_output{
+  margin-top: 10px;
+  display: none;
+  margin-left: 5%;
+}
+
+.RED{
+  background: #e32626;
+  color: white;
+}
+
+.RED:hover {
+  animation-duration: 2s;
+  animation-name: rotate;
+  animation-iteration-count: 1;
+  background-color: red;
+}
+
+@keyframes rotate {
+  from {
+  transform: rotate(1turn);
+  }
+
+  to {
+  transform: rotate(2turn);
+  }
+}
+
+.main_output_textarea{
+  display: none;
+  min-height: 300px;
+  animation-duration: 0.4s;
+  animation-name: out;
+  animation-iteration-count: 1;
+}
+
+@keyframes out {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-bottom: 0%;
+  }
+}
